@@ -6,7 +6,7 @@
  * This class tests the Pancake Sorter to see if it works (and works efficiently enough) - 
  * in terms of the number of flips. It should be able to sort the stack in less than 2n flips.
  * 
- * Jermey Wiening, Dawit Kasy, Jason Handrahan, Paul Zegarek, Elle Berry
+ * Jermey Wiening, Dawit Kasy, Jason Handrahan, Paul Zegarek, Ella Berry
  **********/
 public class PancakeSorter {
     // Tracking the effectiveness of the sorter
