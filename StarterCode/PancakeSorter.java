@@ -74,5 +74,7 @@ public class PancakeSorter {
             }
         }  
         stack.printStack();  // If you wish to see the stack at the end (is it sorted?) 
+
+        // RUNNING TIME: Theta(n^2);
     }
 }
