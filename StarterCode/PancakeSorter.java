@@ -64,22 +64,15 @@ public class PancakeSorter {
             for (int i = 1; i < size; i++) {         // Find the index of the largest pancake in the unsorted part
                 if (stack.getPancake(i) > stack.getPancake(max)) { //if pancake at index 1 is greater than pancake at index 0 set new max to i
                     max = i;
+                }
             }
-        }
-
-        if (max != size - 1) {      // If the largest pancake is not already at the top
-
-            if (max != 0) {             
-                stack.flip(max + 1);  // Flip up pancake to the position of the largest pancake
+            if (max != size - 1) {      // If the largest pancake is not already at the top
+                if (max != 0) {             
+                    stack.flip(max + 1);  // Flip up pancake to the position of the largest pancake
+                }
+                stack.flip(size);    // Flip the entire  stack with the largest pancake on the bottom  
             }
-            stack.flip(size);    // Flip the entire  stack with the largest pancake on the bottom
-            
+        }  
+        stack.printStack();  // If you wish to see the stack at the end (is it sorted?) 
     }
-       
-}  
-          stack.printStack();  // If you wish to see the stack at the end (is it sorted?) 
-
-
-    }
-    
 }
